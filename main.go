@@ -26,7 +26,7 @@ type ProgramFlags struct {
 func parseFlags() ProgramFlags {
 	var config ProgramFlags
 
-	flag.BoolVar(&config.IsDebug, "debug", false, "set debug mode")
+	flag.BoolVar(&config.IsDebug, "debug", false, "enable debug logging and pretty printing")
 	flag.Parse()
 
 	return config
